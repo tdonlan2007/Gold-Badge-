@@ -30,7 +30,7 @@ namespace Challenge_1_Tests
 		{
 			//-- arrange
 			List<MealItem> actualList = new List<MealItem>();
-			MealItem komodo2 = new MealItem(4, "Komodo2", "Big Steak", 12.99, "Ingredients");
+			MealItem komodo2 = new MealItem(4, "Salad2", "Big House", 12.99, "Ingredients");
 			mealRepo.AddMeal(komodo2);
 
 			//-- act
@@ -57,21 +57,7 @@ namespace Challenge_1_Tests
 			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
-		public void MealItemRepository_RemoveListItemByName_ShouldBeSameCount()
-		{
-			//-- arrange
-			string name = "Burger";
-			mealRepo.RemoveMenuItemByName(name);
-
-			//-- act
-			int actual = mealRepo.GetCount();
-			int expected = 2;
-
-			//-- assert
-			Assert.AreEqual(expected, actual);
-		}
-
+		
 		[TestMethod]
 		public void MealItemRepository_RemoveListItemByNumber_ShouldBeSameCount()
 		{

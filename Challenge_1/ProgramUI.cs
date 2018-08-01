@@ -126,7 +126,7 @@ namespace Challenge_1
 				UIRemoveByNumber();
 			else
 			{
-				Console.WriteLine("Something went HELLA wrong here");
+				Console.WriteLine("Wrong!!!!");
 				Console.ReadKey();
 				UIRemoveItem();
 			}
@@ -138,7 +138,7 @@ namespace Challenge_1
 
 			foreach (MealItem meal in mealRepo.GetList())
 				Console.WriteLine(meal);
-			Console.Write("Enter Name of Item To Remove (NOTE: CASE SENSITIVE): ");
+			Console.Write("Enter Name of Item To Remove : ");
 			string itemName = Console.ReadLine();
 
 			mealRepo.RemoveMenuItemByName(itemName);

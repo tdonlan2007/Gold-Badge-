@@ -10,9 +10,9 @@ namespace Challenge_2
 	{
 		private List<Claim> _claimsList = new List<Claim>()
 		{
-			new Claim(1, 400.00, "CrashOn465", DateTime.Parse("4/25/2018"), DateTime.Parse("4/27/18"), ClaimType.Car),
-			new Claim(2, 4000.00, "HouseFire", DateTime.Parse("4/26/18"), DateTime.Parse("4/28/18"), ClaimType.Home),
-			new Claim(3, 4.00, "StolenFood", DateTime.Parse("4/25/18"), DateTime.Parse("7/01/18"), ClaimType.Theft)
+			new Claim(1, 6000.00, "CrashOn69", DateTime.Parse("6/30/2018"), DateTime.Parse("7/03/18"), ClaimType.Car),
+			new Claim(2, 20000.00, "HouseFire", DateTime.Parse("7/26/18"), DateTime.Parse("7/28/18"), ClaimType.Home),
+			new Claim(3, 4.00, "StolenFood", DateTime.Parse("3/25/18"), DateTime.Parse("3/29/18"), ClaimType.Theft)
 		};
 
 

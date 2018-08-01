@@ -37,6 +37,7 @@ namespace Challenge_3
 				case "4":
 					UIExit();
 					break;
+               
 				default:
 					Console.Clear();
 					Console.WriteLine("Invalid Answer");
@@ -72,7 +73,7 @@ namespace Challenge_3
 		{
 			Console.Clear();
 			Console.WriteLine("NOTE: Inputs are spelling specific");
-			Console.WriteLine("Enter Event Type\n1. Golf\n2. Bowling\n3. Amusement Park\n4. Concert");
+			Console.WriteLine("Enter Event Type\n1. Fishing\n2. Hunting\n3. Trapping\n4. Hiking");
 
 			string eventStr = Console.ReadLine();
 			bool eventBool = int.TryParse(eventStr, out int evnt);
@@ -90,19 +91,19 @@ namespace Challenge_3
 			switch (evnt)
 			{
 				case 1:
-					eventType = Event.Golf;
+					eventType = Event.Fishing;
 					break;
 				case 2:
-					eventType = Event.Bowling;
+					eventType = Event.Hunting;
 					break;
 				case 3:
-					eventType = Event.AmusementPark;
+					eventType = Event.Trapping;
 					break;
 				case 4:
-					eventType = Event.Concert;
+					eventType = Event.Hiking;
 					break;
 				default:
-					Console.WriteLine("Something went Hella wrong");
+					Console.WriteLine("Wrong!!!!");
 					Console.ReadKey();
 					UIAddOuting();
 					break;
@@ -203,7 +204,7 @@ namespace Challenge_3
 		private void UIOutingsByType()
 		{
 			Console.Clear();
-			Console.WriteLine("Enter Event Type To Search For\n1. Golf\n2. Bowling\n3. Amusement Park\n4. Concert");
+			Console.WriteLine("Enter Event Type To Search For\n1. Fishing\n2. Hunting\n3. Trapping\n4. Hiking");
 			string input = Console.ReadLine();
 			bool inputBool = int.TryParse(input, out int evnt);
 
@@ -220,19 +221,19 @@ namespace Challenge_3
 			switch (evnt)
 			{
 				case 1:
-					eventType = Event.Golf;
+					eventType = Event.Fishing;
 					break;
 				case 2:
-					eventType = Event.Bowling;
+					eventType = Event.Hunting;
 					break;
 				case 3:
-					eventType = Event.AmusementPark;
+					eventType = Event.Trapping;
 					break;
 				case 4:
-					eventType = Event.Concert;
+					eventType = Event.Hiking;
 					break;
 				default:
-					Console.WriteLine("Something went Hella wrong");
+					Console.WriteLine("Wrong!!!!");
 					Console.ReadKey();
 					UIAddOuting();
 					break;

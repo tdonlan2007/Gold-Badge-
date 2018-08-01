@@ -30,7 +30,7 @@ namespace Challenge_3_Tests
 		{
 			//-- arrange
 			List<Outing> outings = new List<Outing>();
-			Outing outing = new Outing(Event.AmusementPark, 40, DateTime.Parse("7/21/18"), 50, 5000);
+			Outing outing = new Outing(Event.Hiking, 40, DateTime.Parse("7/21/18"), 50, 5000);
 
 			//-- act
 			outingRepo.UpdateList(outing);
@@ -47,7 +47,7 @@ namespace Challenge_3_Tests
 		{
 			//-- arrange
 			List<Outing> outings = new List<Outing>();
-			Outing outing = new Outing(Event.AmusementPark, 40, DateTime.Parse("7/21/18"), 50, 5000);
+			Outing outing = new Outing(Event.Hiking, 40, DateTime.Parse("7/21/18"), 50, 5000);
 
 			//-- act
 			outingRepo.UpdateList(outing);
@@ -64,11 +64,11 @@ namespace Challenge_3_Tests
 		{
 			//-- arrange
 			List<Outing> outings = new List<Outing>();
-			Outing outing = new Outing(Event.AmusementPark, 40, DateTime.Parse("7/21/18"), 50, 5000);
+			Outing outing = new Outing(Event.Hiking, 40, DateTime.Parse("7/21/18"), 50, 5000);
 
 			//-- act
 			outingRepo.UpdateList(outing);
-			double actual = outingRepo.CostOfOutingsByType(Event.AmusementPark);
+			double actual = outingRepo.CostOfOutingsByType(Event.Hiking);
 			double expected = 5000;
 
 			//-- assert

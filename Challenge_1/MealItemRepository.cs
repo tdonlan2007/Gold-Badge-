@@ -8,11 +8,11 @@ namespace Challenge_1
 {
 	public class MealItemRepository
 	{
-		private List<MealItem> _meals = new List<MealItem>()
-		{
-			new MealItem(1, "Burger", "Tasty Burger", 9.99, "Bun, Onion, Beef, Cheese"),
-			new MealItem(2, "Taco", "Spicy Taco", 4.99, "Tortilla, Beef, Lettuce, Cheese"),
-			new MealItem(3, "Komodo", "Big Steak", 12.99, "Steak, Seasoning, Fork")
+        private List<MealItem> _meals = new List<MealItem>()
+        {
+			new MealItem(1, " Hot Dog ", "Footlong ", 7.99 , " Cheese, Chli, Onions, Relish "),
+			new MealItem(2, " Italian Beef", " All Beef ", 13.99 , " Beef, Onions, Mayo, Ketchup "),
+			new MealItem(3, " Salad ", " Big House ", 6.99 , " Bacon, Chees, Eggs ")
 		};
 
 		public List<MealItem> GetList() 
